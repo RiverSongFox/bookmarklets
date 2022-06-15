@@ -1,0 +1,26 @@
+{
+  "name": "bookmarklets",
+  "version": "0.0.1",
+  "description": "Catalog of useful (and not so useful) bookmarklets",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon -e js,mustache ./lib/generate.js",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "build": "node ./lib/generate.js",
+    "deploy": "pnpm build && surge dist/ bookmarklets.surge.sh"
+  },
+  "keywords": [],
+  "author": "Nikolai Kim <hello@nikolai.kim>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "standard": "^17.0.0",
+    "surge": "^0.23.1"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0",
+    "terser": "^5.14.1"
+  }
+}
