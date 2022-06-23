@@ -5,22 +5,25 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon -e js,mustache ./lib/generate.js",
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
     "lint": "standard",
     "lint-fix": "standard --fix",
-    "build": "node ./lib/generate.js",
     "deploy": "pnpm build && surge dist/ bookmarklets.surge.sh"
   },
   "keywords": [],
   "author": "Nikolai Kim <hello@nikolai.kim>",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.16",
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
     "standard": "^17.0.0",
-    "surge": "^0.23.1"
+    "surge": "^0.23.1",
+    "svelte": "^3.44.0"
   },
   "dependencies": {
-    "mustache": "^4.2.0",
     "terser": "^5.14.1"
   }
 }
