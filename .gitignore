@@ -1,4 +1,5 @@
 node_modules/
+build/
 
 .pnp.*
 .pnpm-debug.log*
