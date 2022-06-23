@@ -23,5 +23,6 @@ Finally, open `/dist/index.html` in your browser.
 
 1. Add a new JavaScript file  `/src` folder
 1. Create and export an instance of `Bookmarklet` class
+1. Re-export the instance in `/src/index.js`
 
 Please reference `/src/hello-world.js` for a basic implementation.
