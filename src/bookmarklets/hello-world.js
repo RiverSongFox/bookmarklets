@@ -1,4 +1,4 @@
-import { Bookmarklet } from '../lib/bookmarklet.js'
+import { Bookmarklet } from '../../lib/bookmarklet.js'
 
 export const HelloWorld = new Bookmarklet('Hello, World', () => {
   window.alert('Hello, World!')
