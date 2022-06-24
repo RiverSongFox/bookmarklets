@@ -1,5 +1,8 @@
 node_modules/
-dist/
+build/
+.svelte-kit/
 
 .pnp.*
 .pnpm-debug.log*
+
+.netlify/
