@@ -4,3 +4,5 @@ build/
 
 .pnp.*
 .pnpm-debug.log*
+
+.netlify/
