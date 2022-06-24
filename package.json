@@ -10,8 +10,7 @@
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
     "lint": "standard",
-    "lint-fix": "standard --fix",
-    "deploy": "pnpm build && surge dist/ bookmarklets.surge.sh"
+    "lint-fix": "standard --fix"
   },
   "keywords": [],
   "author": "Nikolai Kim <hello@nikolai.kim>",
@@ -22,7 +21,6 @@
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "standard": "^17.0.0",
-    "surge": "^0.23.1",
     "svelte": "^3.44.0"
   },
   "dependencies": {
