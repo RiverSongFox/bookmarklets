@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation!!!11</p>
+<script>
+    import Bookmarklet from '../components/bookmarklet.svelte'
+    
+    export let bookmarklets;
+</script>
+
+{#each bookmarklets as data}
+    <Bookmarklet {...data} />
+{/each}
