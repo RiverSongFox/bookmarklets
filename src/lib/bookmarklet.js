@@ -1,5 +1,3 @@
-import { minify } from 'terser'
-
 export class Bookmarklet {
   meta = {
     title: '',
@@ -67,18 +65,12 @@ export class Bookmarklet {
    *
    * @returns Object
    */
-  async serialize () {
+  serialize () {
     const source = this.fn.toString()
 
     return {
       ...this.meta,
-      fn: this.fn,
-      source,
-      minified: (await minify(source, {
-        compress: {
-          expression: true
-        }
-      })).code.replace(/;$/, '')
+      source
     }
   }
 }
