@@ -14,10 +14,8 @@ Run the following commands:
 
 ```
 pnpm install
-pnpm watch
+pnpm dev
 ```
-
-Finally, open `/dist/index.html` in your browser.
 
 ### How to add a bookmarklet?
 
