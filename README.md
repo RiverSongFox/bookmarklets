@@ -1,6 +1,6 @@
 # bookmarklets
 
-An open sporce collection of bookmarklets. Feel welcome to discover and contribute your own browser helpers.
+An open source collection of bookmarklets. Feel welcome to discover and contribute your own browser helpers.
 
 ![](docs/screenshot.png)
 
