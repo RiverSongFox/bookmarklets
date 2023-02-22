@@ -1,6 +1,6 @@
 import { Bookmarklet } from '../lib/bookmarklet.js'
 
-export const OpenTicket = new Bookmarklet('Copy Inner Text', (options) => {
+export const CopyInnerText = new Bookmarklet('Copy Inner Text', (options) => {
   const copyInnerText = e => {
     navigator.clipboard.writeText(e.target.innerText)
   }
